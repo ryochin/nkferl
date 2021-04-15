@@ -1,0 +1,11 @@
+{application,nkferl,
+             [{description,"nkf library implemented in NIFs."},
+              {vsn,"0.1.2"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {modules,[]},
+              {exclude_files,["rebar.lock"]},
+              {maintainers,["tayutayura"]},
+              {licenses,["MIT"]},
+              {links,[{"GitHub","https://github.com/tayutayura/nkferl"}]}]}.
