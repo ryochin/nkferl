@@ -1,6 +1,6 @@
 {application,nkferl,
              [{description,"nkf library implemented in NIFs."},
-              {vsn,"0.1.2"},
+              {vsn,"0.2.0"},
               {registered,[]},
               {applications,[kernel,stdlib]},
               {env,[]},
