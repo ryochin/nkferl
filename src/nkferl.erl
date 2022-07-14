@@ -11,6 +11,13 @@
 %% API functions
 %%====================================================================
 
+-spec nkf(Arg, Text) -> {ok, binary()} | {error, atom()} when
+  Arg :: string(),
+  Text :: binary().
+
+-spec guess(Text) -> {ok, binary()} | {error, atom()} when
+  Text :: binary().
+
 nkf(_, _) ->
   not_loaded(?LINE).
 
@@ -37,4 +44,4 @@ init() ->
 
 
 not_loaded(Line) ->
-  exit({not_loaded, [{module, ?MODULE}, {line, Line}]}).
+  erlang:nif_error({not_loaded, [{module, ?MODULE}, {line, Line}]}).
